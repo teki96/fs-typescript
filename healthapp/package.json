@@ -1,0 +1,29 @@
+{
+  "name": "healthapp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "calculateBmi": "tsc && node --no-warnings --experimental-strip-types bmiCalculator.ts",
+    "calculateExercises": "tsc && node --no-warnings --experimental-strip-types exerciseCalculator.ts",
+    "lint": "eslint .",
+    "start": "node --no-warnings --experimental-strip-types index.ts",
+    "dev": "concurrently \"tsc --watch\" \"node --watch index.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.4",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
